@@ -1,0 +1,44 @@
+
+{% extends 'about.html' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, tr, td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        {% block result %}
+        <center>
+        <p>
+            <table style="color: rgb(142, 25, 35);">
+                <tr>
+                    <th>
+
+                        <h2 style="color: rgba(0, 6, 7, 0.95);">Matched</h2>
+                    </th>
+                    <th>
+                        <h2 style="color: rgba(2, 12, 15, 0.95);">Count</h2>
+
+                    </th>
+                </tr>
+                <tr>
+            <th>
+                {% for c in c %}
+
+                <h3 style="color: rgb(127, 32, 153);">{{c}}</h3>
+                {% endfor %}
+
+        </th><br>
+            <th>
+                <h3 style="color: rgb(127, 32, 153);">{{d}}</h3>
+            </th>
+                </tr>
+            </table>
+        </p>
+        </center>
+        {% endblock %}
+    </body>
+</html>

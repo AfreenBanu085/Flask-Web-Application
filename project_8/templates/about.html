@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regression Task</title>
+<style>
+    table, th, tr, td{
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body bgcolor="white">
+    <center><h1 style = 'color:rgb(34, 3, 92); font-size: 50px;'>REGEX-101</h1></center>
+
+<center>
+<form action="\regex" method="POST">
+<label></label><h2 style="color: rgb(6, 174, 231);">Text:<br><textarea name="text" required></textarea></h2></label>
+<h2 style="color: rgba(6, 165, 201, 0.95);">Pattern: <br><input type="text" name="pattern" required></h2>
+<h4 style="color: rgb(86, 6, 16);">click on the submit button</h4>
+<input type="submit" value = Submit>
+<input type = 'Reset' value = Refresh>
+</form>
+</center>
+{% block result %}
+{% endblock %}
+
+</body>
+</html>
