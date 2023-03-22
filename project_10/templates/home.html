@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div.container { text-align: center;
+    margin-left: 200px; 
+    margin-right: 100px;
+}
+    ul.myul { display: inline-block; text-align: left;
+        margin-left: 30px; 
+    }
+    li{
+        padding-top: 7px;
+        font-size: 20px;
+    }
+    #button1{
+        float: left;
+        margin-left: -120px;
+        position: absolute;
+        border-color: black;
+        border-radius: 8px;
+        background-color: blanchedalmond;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    #button2{
+        float: right;
+        margin-right: 430px;
+        position: absolute;
+        border-color: black;
+        border-radius: 8px;
+        background-color: blanchedalmond;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    #input1{
+        border-radius: 60px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 25px;
+        border-color: black;
+        border-width: 5px;
+    }
+    
+</style>
+</head>
+<body>
+    <center>
+    <form action="" method="POST">
+        <img src="https://th.bing.com/th/id/R.1207d3488a193ad4b3e34caf7e555286?rik=2zjJ7J%2fY%2fpKNNQ&riu=http%3a%2f%2fwww.s8wministries.org%2fimages%2ftheme%2fmy-notes.png&ehk=R7RV5YLuD2rpRUw3KdWckBnIpxYWOGJbrwH1nrFoHEA%3d&risl=&pid=ImgRaw&r=0" height="250" width="250"><br>
+        <input type="text" name="note" placeholder="Enter a note" id = 'input1' style="background-color:rgb(232, 227, 221);">
+        <br><br>
+        <button id="button1" type="submit">Add Note</button>
+    </form>
+    <form action="" method="GET">
+        <button id="button2" type="submit" name ='refresh'>Refresh</button>
+        
+    </form>
+    </center>
+    <br><br>
+    {% block notes %}
+    {% endblock %}
+    </body>
+    <center>
+        <img src="https://wallpapercave.com/wp/wp11543643.jpg"height="600" width="1200"><br>
+    </center>
+</body>
+</html>
